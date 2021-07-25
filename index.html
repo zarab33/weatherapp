@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>weather</title>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+    <h1 class="temperature" id=temperature>22<span class=units>℃ | <a href="#" id="farenheit-link">℉</a></span>
+    </h1>
+    <form id=search-form>
+      <input class="search" type="text" placeholder="Search.." name="search" id="search-input">
+      <input class="search-btn" type="submit" value="Search"</>
+    </form>
+    <button class="current-btn" id="current-btn">Current</button>
+
+    <div class="current-time">
+  <div id="search-city">LONDON
+  
+  </div>
+    <h3  id="current-time">17:10<h3>
+      <h3 id="weather-description">BRIGHT AND SUNNY</h3>
+      <div class="weather-details"><span id="humidity">    Humidity  |</span><span id="wind">         Wind</span></div>
+    </div>
+      <div class="times">
+      <div class="row">
+        <div class="col">01:00</div>
+        <div class="col">02:00</div>
+         <div class="col">03:00</div>
+         <div class="col">04:00</div>
+         <div class="col">05:00</div>
+         <div class="col">06:00</div>
+         <div class="col">07:00</div>
+         <div class="col">08:00</div>
+      </div>
+    </div>
+      <h3 class="weeks-header">WEEKS FORECAST <br></h3>     
+      <div class="day-forecast">
+         <div class="row">
+            <div class="col">SUN🌦</div>
+            <div class="col">MON🌦</div>
+            <div class="col">TUE🌦</div>
+            <div class="col">WED🌦</div>
+            <div class="col">THU🌦</div>
+            <div class="col">FRI🌦</div>
+            <div class="col">SAT🌦</div>
+            <div class="col">SUN🌦</div>
+            </div>
+            </div>
+</div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
